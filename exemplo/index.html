@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Exemplo Interativo</h1>
+            <div class="counter-container">
+                <button id="decrementBtn">-</button>
+                <span id="counterValue">0</span>
+                <button id="incrementBtn">+</button>
+            </div>
+            
+            <div class="color-container">
+                <h2>Mudar Cor</h2>
+                <input type="color" id="colorPicker" value="#3498db">
+                <button id="applyColorBtn">Aplicar Cor</button>
+            </div>
+
+            <div class="todo-container">
+                <h2>Lista de Tarefas</h2>
+                <div class="todo-input">
+                    <input type="text" id="todoInput" placeholder="Nova tarefa">
+                    <button id="addTodoBtn">Adicionar</button>
+                </div>
+                <ul id="todoList"></ul>
+            </div>
+
+            <div class="email-container">
+                <h2>Enviar por Email</h2>
+                <form id="emailForm" class="email-form">
+                    <input type="email" id="emailInput" placeholder="Seu email" required>
+                    <textarea id="emailMessage" placeholder="Sua mensagem" required></textarea>
+                    <div class="button-group">
+                        <button type="submit">Enviar Email</button>
+                        <button type="button" id="printBtn">Imprimir Página</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
